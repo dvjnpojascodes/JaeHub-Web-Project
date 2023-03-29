@@ -1,0 +1,169 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 50vw;
+  min-height: 200px;
+  max-height: 600px;
+  min-width: 300px;
+  color: #eee;
+}
+.header:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.527) 40%, rgb(28, 31, 38) 100%);
+}
+.header:before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: perspective(500px);
+  background-size: 100%;
+  background-attachment: fixed;
+  animation: grow 360s linear 10ms infinite;
+  transition: all 0.4s ease-in-out;
+  z-index: -2;
+}
+@media screen and (max-width: 700px) {
+  .header:before {
+    height: 200%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header:before {
+    height: 800%;
+  }
+}
+.header a {
+  color: #eee;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+.header .info {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.header .info {
+  width: 100%;
+  padding: 10% 10% 0 10%;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+@media screen and (max-width: 800px) {
+  .header .info {
+    padding: 15% 3% 0 3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .info {
+    padding: 5%;
+  }
+}
+.header .info h1 {
+  margin-top: 1em;
+  font-size: 4em;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+}
+@media screen and (max-width: 830px) {
+  .header .info h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header .info h1 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .info h1 {
+    font-size: 1.5em;
+  }
+}
+.header .info h4 {
+  font-style: italic;
+  font-size: 0.7em;
+}
+@media screen and (max-width: 800px) {
+  .header .info h4 {
+    margin-top: 3.5em;
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.2) translateY(-400px);
+  }
+}
+
+#responsive::before {
+  background: #171717 url(/assets/Responsive.jpg) 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+#webdesign::before {
+  background: #252627 url(/assets/webdev.jpg) 50% 0 no-repeat;
+}
+
+#ecommerce::before {
+  background: #252627 url(/assets/Ecommerce.jpg) 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+#hosting::before {
+  background: #252627 url(/assets/hosting.jpg) 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+#seo::before {
+  background: #252627 url(/assets/seo.jpg) 50% 0 no-repeat;
+  background-size: 100%;
+}
+
+#content-marketing::before {
+  background: #171717 url(/assets/content-marketing.jpg) 100% 0 no-repeat;
+  background-size: 100%;
+}
+
+.content {
+  padding: 5% 10%;
+  text-align: justify;
+}
+.content a {
+  color: #FFBE9D;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.content a:hover {
+  color: #333333;
+}/*# sourceMappingURL=offer.css.map */

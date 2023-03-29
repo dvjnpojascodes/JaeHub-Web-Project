@@ -1,0 +1,473 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 0 3em !important;
+  position: relative;
+  height: 30em;
+}
+.header .intro {
+  width: 50em;
+}
+.header .intro h5 {
+  padding: 1em 0;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 400px) {
+  .header .intro h5 {
+    font-size: 1em;
+  }
+}
+.header .intro h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.8em;
+}
+@media screen and (max-width: 500px) {
+  .header .intro h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .header .intro h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 340px) {
+  .header .intro h2 {
+    font-size: 1.5em;
+  }
+}
+.header .intro #service-description {
+  padding: 1em 0;
+  text-align: justify;
+}
+.header #service-description {
+  width: 28em;
+}
+.header .header-img {
+  background-image: url(/assets/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0 100%);
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 500px) {
+  .header .header .intro {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 340px) {
+  .header {
+    padding: 2 1em !important;
+  }
+}
+
+#btn, #submitButton {
+  margin-top: 2em;
+  text-decoration: none;
+  border: 1px solid #D86415;
+  background-color: #D86415;
+  color: #fff;
+  padding: 1em 5em;
+  border-radius: 5px;
+  font-size: 1em !important;
+  transition: 0.6s ease-in-out;
+}
+#btn:hover, #submitButton:hover {
+  color: #D86415;
+  border: 1px solid #D86415;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #btn, #submitButton {
+    padding: 0.8em 4em;
+  }
+}
+
+.about {
+  background-color: rgba(240, 238, 238, 0.2235294118);
+  padding: 5em 3em 2em !important;
+  z-index: -2;
+}
+.about #offer {
+  color: #FFBE9D;
+}
+.about h2 {
+  color: #D86415;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.about #service-description {
+  text-align: justify;
+  line-height: 2em;
+  padding-right: 6em;
+  margin-bottom: 3em;
+}
+@media screen and (max-width: 1000px) {
+  .about #service-description {
+    padding-right: 0;
+  }
+}
+.about ul {
+  list-style-type: none;
+  margin-top: 2em;
+}
+.about ul li {
+  padding: 0 0 1em;
+}
+.about ul li a {
+  text-decoration: none;
+  color: #D86415;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.about ul li a:hover {
+  color: #FFBE9D;
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    text-align: center;
+  }
+}
+
+hr {
+  display: none;
+}
+
+.packages, .branding {
+  color: #FFF;
+  background-color: #BDCCB0;
+}
+.packages .custom-website, .branding .custom-website {
+  text-align: center;
+}
+.packages .custom-website h2, .branding .custom-website h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+  padding-bottom: 0.3em;
+}
+.packages .custom-website #service-description, .branding .custom-website #service-description {
+  line-height: 2em;
+}
+.packages .featured-image, .branding .featured-image {
+  padding: 0 !important;
+}
+.packages .featured-image img, .branding .featured-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.branding {
+  background-color: #2D6E9B;
+}
+
+.mockups {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1em;
+  height: 100%;
+  max-width: 2000px;
+  margin: 2em;
+}
+.mockups img {
+  width: 70%;
+}
+.mockups #item-0,
+.mockups #item-1,
+.mockups #item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF2EA;
+}
+@media (max-width: 1300px) {
+  .mockups #item-0,
+  .mockups #item-1,
+  .mockups #item-2 {
+    width: 100%;
+  }
+}
+.mockups #item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 4;
+}
+.mockups #item-1 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.mockups #item-2 {
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 5;
+  grid-column-end: 6;
+}
+@media (max-width: 1300px) {
+  .mockups {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonial {
+  margin: 7em 2em;
+  display: flex;
+  height: 30em;
+  position: relative;
+}
+.testimonial .left {
+  width: 20%;
+}
+.testimonial .left h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #D86415;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 3.3em;
+  left: -5em;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .testimonial .left h2 {
+    font-size: 2em;
+  }
+}
+.testimonial .carousel {
+  width: 80%;
+}
+@media screen and (max-width: 800px) {
+  .testimonial .carousel {
+    margin: 5em auto 0;
+    width: 90%;
+  }
+}
+.testimonial .card {
+  padding: 2em;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-left: 1px solid #FFF2EA;
+  border-right: 1px solid #FFF2EA;
+  border-top: none;
+  border-bottom: none;
+}
+.testimonial .card .user-image {
+  margin: 0 auto;
+}
+.testimonial .user-image {
+  text-align: center;
+  padding-right: 5em;
+}
+.testimonial .user-image .name {
+  margin-top: 1em;
+}
+.testimonial .user-content {
+  text-align: center;
+}
+.testimonial .user-content p {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #D86415;
+}
+@media screen and (max-width: 1500px) {
+  .testimonial {
+    flex-direction: column;
+  }
+  .testimonial .left {
+    width: 100%;
+    height: 5em;
+    justify-content: center;
+  }
+  .testimonial .left h2 {
+    transform: rotate(0deg);
+    top: -1em;
+    left: 0;
+    width: 100% !important;
+  }
+  .testimonial .user-image {
+    padding: 0;
+  }
+  .testimonial .user-content p {
+    font-size: 14px;
+  }
+  .testimonial .carousel {
+    width: 90%;
+    margin: 5em auto 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .testimonial {
+    margin-bottom: 10em;
+  }
+  .testimonial .user-content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .testimonial {
+    margin-bottom: 15em;
+  }
+}
+
+.contact {
+  padding: 3em 0 5em;
+  background-color: rgba(240, 238, 238, 0.2235294118);
+}
+.contact .contact-header {
+  text-align: center;
+}
+.contact .contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90vw;
+  margin-top: 4em;
+}
+.contact .contact-section .map, .contact .contact-section .form {
+  width: 50%;
+  padding: 1em;
+}
+.contact .contact-section .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact .contact-section .form input:focus,
+.contact .contact-section .form textarea:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+@media screen and (max-width: 800px) {
+  .contact .contact-section {
+    flex-direction: column-reverse;
+  }
+  .contact .contact-section .map, .contact .contact-section .form {
+    width: 100%;
+    padding: 1em;
+  }
+  .contact .contact-section .map {
+    height: 500px;
+  }
+}
+.contact h5 {
+  color: #D86415;
+}
+.contact h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1500px) {
+  .intro {
+    width: 50em;
+    padding: 3em 0;
+  }
+  .header-img {
+    width: 90em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  .header .intro {
+    width: 50em;
+  }
+  .header #service-description {
+    width: 100%;
+    text-align: center !important;
+  }
+  .header .header-img {
+    top: 0;
+    background-image: url(/assets/header.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    width: 100%;
+  }
+  .packages .custom-website #service-description {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 890px) {
+  .header-img {
+    top: 0;
+  }
+  .header .intro {
+    width: 70em;
+    font-size: 1em;
+  }
+  .about {
+    text-align: center;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  .about #service-description {
+    padding-right: 1em;
+    margin-top: 2em;
+  }
+  .about .service-offered {
+    margin-top: 5em;
+  }
+  hr {
+    border: 2px solid #333333;
+    display: inline;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 35em;
+    padding: 0 1em !important;
+  }
+  .header .intro {
+    font-size: 0.8em;
+    width: 90em;
+  }
+  .about h2,
+  .packages h2,
+  .branding h2,
+  .testimonial h2 {
+    font-size: 2em !important;
+  }
+  .packages #service-description {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=index.css.map */

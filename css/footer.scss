@@ -1,0 +1,65 @@
+footer {
+
+    .socmed {
+        a {
+            text-decoration: none;
+            padding-left: 1em;
+            color: #fff;
+
+            &:hover {
+                color: color(accent);
+            }
+        }
+    }
+
+    .main-footer {
+        background-color: #BDCCB0;
+        color: color(text);
+
+        a {
+            text-decoration: none;
+        }
+
+        h6 {margin-bottom: 2em;}
+
+        #logo {
+            width: 18vw;
+            margin-bottom: 1em;
+        }
+
+        .about-footer {
+            text-align: justify;
+            margin-right: 3em;
+        }
+
+        .map { padding-right: 23em;}
+
+        .line {
+            background-color: color(accent);
+            border: 1px solid color(accent);
+        }
+    }
+
+    .services {
+        margin-left: 1em;
+    }
+
+    .copyright {
+        background-color: #BDCCB0;
+        color: color(text);
+
+        a {
+            text-decoration: none;
+
+            &:focus{
+                outline: none;
+                border-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
+    @media screen and (max-width:800px){
+        font-size: 13px !important;
+    }
+}

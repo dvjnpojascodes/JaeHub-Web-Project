@@ -1,0 +1,127 @@
+@charset "UTF-8";
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing .pc-1 {
+  border: 2px solid #BDCCB0;
+}
+.pricing .pc-2 {
+  border: 2px solid #EB863A;
+}
+.pricing .pc-3 {
+  border: 2px solid #2D6E9B;
+}
+
+.price-card {
+  border-radius: 10px;
+  padding: 3em 10em;
+  width: 25em !important;
+  margin: 2em;
+}
+.price-card #type {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.price-card #price {
+  color: #D86415;
+  font-size: 2em;
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  .price-card #price {
+    font-size: 22px;
+  }
+}
+.price-card #price span {
+  color: #333333;
+  font-weight: 400;
+  font-size: 0.7em;
+}
+.price-card ul {
+  list-style: none;
+}
+.price-card ul li {
+  padding-bottom: 1em;
+}
+.price-card ul li::before {
+  content: "•";
+  color: #FFBE9D;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.faq {
+  background-color: rgba(240, 238, 238, 0.2235294118);
+  padding: 5em 2em;
+}
+.faq h3 {
+  color: #D86415;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-left: 1.8em;
+}
+.faq #question {
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+.faq #answer {
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+.faq span {
+  background-color: #FFBE9D;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  align-items: center;
+  text-align: center;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .faq h3 {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  #question {
+    font-size: 15px;
+  }
+  #answer {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .faq {
+    padding: 5em 0;
+  }
+  .faq h3 {
+    font-size: 20px;
+  }
+  #question {
+    font-size: 15px;
+  }
+  #answer {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=price.css.map */

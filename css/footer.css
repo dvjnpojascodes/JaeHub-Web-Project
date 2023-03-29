@@ -1,0 +1,53 @@
+footer .socmed a {
+  text-decoration: none;
+  padding-left: 1em;
+  color: #fff;
+}
+footer .socmed a:hover {
+  color: color(accent);
+}
+footer .main-footer {
+  background-color: #BDCCB0;
+  color: color(text);
+}
+footer .main-footer a {
+  text-decoration: none;
+}
+footer .main-footer h6 {
+  margin-bottom: 2em;
+}
+footer .main-footer #logo {
+  width: 18vw;
+  margin-bottom: 1em;
+}
+footer .main-footer .about-footer {
+  text-align: justify;
+  margin-right: 3em;
+}
+footer .main-footer .map {
+  padding-right: 23em;
+}
+footer .main-footer .line {
+  background-color: color(accent);
+  border: 1px solid color(accent);
+}
+footer .services {
+  margin-left: 1em;
+}
+footer .copyright {
+  background-color: #BDCCB0;
+  color: color(text);
+}
+footer .copyright a {
+  text-decoration: none;
+}
+footer .copyright a:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    font-size: 13px !important;
+  }
+}/*# sourceMappingURL=footer.css.map */
